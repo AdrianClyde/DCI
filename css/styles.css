@@ -1,0 +1,545 @@
+
+html {
+	height: 100%;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMicgaGVpZ2h0PScyNCcgdmlld0JveD0nMCAwIDUgMTAnPgogICAgICAgICAgICA8cmVjdCB3aWR0aD0nMTEwJScgeD0nLTUlJyB5PSctNSUnIGhlaWdodD0nMTEwJScgZmlsbD0ndHJhbnNwYXJlbnQnLz4KICAgICAgICAgICAgPGxpbmUgeDE9Jy0yJyB5MT0nMScgeDI9JzcnIHkyPScxMCcgc3Ryb2tlPScjZGRkZGRkJyBzdHJva2Utd2lkdGg9JzAuMzknLz4KICAgICAgICAgICAgPGxpbmUgeDE9Jy0yJyB5MT0nNicgeDI9JzcnIHkyPScxNScgc3Ryb2tlPScjZGRkZGRkJyBzdHJva2Utd2lkdGg9JzAuMzknLz4KICAgICAgICAgICAgPGxpbmUgeDE9Jy0yJyB5MT0nLTQnIHgyPSc3JyB5Mj0nNScgc3Ryb2tlPScjZGRkZGRkJyBzdHJva2Utd2lkdGg9JzAuMzknLz4KICAgICAgICA8L3N2Zz4="),
+    repeating-linear-gradient(45deg, #c9d3d7, white, #c9d3d7);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+body {
+    width: 60%;
+    margin: auto;
+    font-family: 'Rambla', sans-serif;
+
+}
+
+header { margin-top: 20px; }
+header ul {
+	width: 80%;
+    float: right;
+    margin: 0;
+    padding: 0;
+	text-align: right;
+}
+
+header li {
+    display: inline-block;
+    margin: 10px 0 10px 3%;
+    padding: 0;
+    list-style: none;
+}
+
+header li a {
+    font-family: 'Rambla', sans-serif;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #11597a;
+    font-weight: 700;
+}
+
+header img {
+    float: left;
+    padding-top: 5px;
+}
+
+header li img {
+    float: right;
+    padding: 2px 4px;
+}
+
+hr {
+    clear: both;
+    border: none;
+    background-color: #11597a;
+    height: 1px;
+    
+}
+
+section {
+    color: #92a3ab;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 2.1rem;
+    color: #00a1de;
+    margin-bottom: 0;
+}
+
+section p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 160%;
+}
+
+.active a {
+	color: #333;
+}
+
+/*--------------------------------------------------------------------- 
+	----------------------- GRAPH SECTION ----------------------- 
+---------------------------------------------------------------------*/
+
+#graphs {
+    margin-top: 40px;
+    height: 381px;
+    background: url(../images/cityBG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+#graphs .col {
+	vertical-align: middle;
+    display: inline-block;
+    width: 32%;
+    height: 100%;
+	position: relative;
+}
+
+#graphs img {
+	max-width:100%;
+	max-height:100%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform:    translateY(-50%);
+    -ms-transform:     translateY(-50%);
+    -o-transform:      translateY(-50%);
+    transform:         translateY(-50%);    
+}
+#graphs .col .graph-txt {
+	display: inline-block;
+	width: 80%;
+	height: 70px;
+	bottom: 1%;
+	left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform:    translateX(-50%);
+    -ms-transform:     translateX(-50%);
+    -o-transform:      translateX(-50%);
+    transform:         translateX(-50%);
+	position: absolute;
+	border-radius: 4px;
+    background-color: rgba(99, 99, 99, 0.3);
+}
+
+#graphs .col .graph-txt span {
+	display: block;
+	position: absolute;
+    font-size: 0.9rem;
+    color: white;   
+	width: 100%;
+	top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform:    translateY(-50%);
+    -ms-transform:     translateY(-50%);
+    -o-transform:      translateY(-50%);
+    transform:         translateY(-50%);    
+}
+/*--------------------------------------------------------------------- 
+	----------------------- BLOCK SECTION ----------------------- 
+---------------------------------------------------------------------*/
+
+.blockInfo {
+    background-color: rgba(43, 56, 72, 0.35);
+    border-radius: 4px;
+    height: 162px;
+    margin-top: 20px;
+}
+
+.blockInfo div {
+    color: white;
+    font-size: 1.1vw;
+    text-align: center;
+    display: inline-block;
+    width: 22%;
+	height: 100%;
+	position: relative;
+}
+
+.blockInfo b {  font-size: 1.6vw; }
+.blockInfo .smallBlock {   width: 12%;  }
+.blockInfo .smallBlock b {   font-size: 2.5vw; }
+.blockInfo div span {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform:    translateY(-50%);
+    -ms-transform:     translateY(-50%);
+    -o-transform:      translateY(-50%);
+    transform:         translateY(-50%); 
+	left: 0;
+	width: 100%;
+}
+.blockInfo div svg {
+	display: inline-block;
+	position: absolute;
+	right: -3px;
+}
+
+footer {    clear: both; text-align: center;    }
+footer li {
+    display: inline-block;
+    color: #555555;
+    margin-right: 1%;
+}
+
+footer ul img { margin-right: 1%; }
+.footerLogo img { padding-top: 20px; }
+
+/*--------------------------------------------------------------------- 
+	----------------------- CONTACT PAGE ----------------------- 
+---------------------------------------------------------------------*/
+.contact {
+	color: #d7e7ef;
+	position: relative;
+	float: left;
+	clear: right;
+	text-align: center;
+	width: 50%;
+	height: 500px;
+	background-color: white;
+	border-radius: 0 2px 2px 0;
+	margin-bottom: 20px;
+	
+	perspective: 800px;
+}
+
+.card {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+  	transform-style: preserve-3d;
+    
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.card figure {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.card .back {
+	background: white;
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform:    rotateY( 180deg );
+    -ms-transform:     rotateY( 180deg );
+    -o-transform:      rotateY( 180deg );
+    transform:         rotateY( 180deg );
+}
+.card .back div {
+	display: inline-block;
+	color: #555;
+	width: 60%;
+	padding-top: 90px;
+	height: 170px;
+	background-color: #E4E4E4;
+	border: #D1D1D1 solid 2px;
+	border-radius: 8px;
+	top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform:    translateY(-50%);
+    -ms-transform:     translateY(-50%);
+    -o-transform:      translateY(-50%);
+    transform:         translateY(-50%); 
+	position: relative;
+}
+
+.flip-card {
+	-webkit-transform: rotateY( 180deg ); 
+    -moz-transform: rotateY( 180deg ); 
+    -o-transform: rotateY( 180deg ); 
+    transform: rotateY( 180deg );
+}
+
+.contact:nth-of-type(1) {
+	background-image: url("../images/cityBG.png");
+	background-position: center;
+	background-size: cover; /* Some scaling/size distortion - Larger image needed */
+	border-radius: 2px 0 0 2px;
+}
+
+.contact img {
+	width: 40%;
+	position: absolute;
+	top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform:    translate(-50%, -50%);
+    -ms-transform:     translate(-50%, -50%);
+    -o-transform:      translate(-50%, -50%);
+    transform:         translate(-50%, -50%); 
+}
+
+.contact form {
+	margin-top: 35px;
+	transform-style: preserve-3d;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.contact form input {
+	font-family: 'Rambla', sans-serif;
+	height: 100%;
+	width: 100%;
+	border: none;
+	text-indent: 15%;
+}
+
+.contact form div {
+	width: 80%;
+	height: 45px;
+	margin: 10px auto;
+}
+
+.contact form div:nth-child(-n+3) {
+	border-radius: 3px;
+	background-color: #F0F0F0;
+	border: #D1D1D1 solid 2px;
+	border: none; /*design change*/
+}
+
+.contact form div:nth-child(3){
+	height: 250px;
+}
+
+.contact form div:first-child input{
+	background: url(../images/user.svg) no-repeat;
+	background-size: 20px auto;
+	background-position: 5% center;
+}
+.contact form div:nth-child(2) input{
+	background: url(../images/email.svg) no-repeat;
+	background-size: 20px auto;
+	background-position: 5% center;
+}
+
+.contact #msg {
+	padding: 20px;
+	text-indent: 10%;
+	font-family: 'Rambla', sans-serif;
+	height: 100%;
+	width: 100%;
+	border: none;
+
+	background: url(../images/message.svg) no-repeat;
+	background-size: 20px auto;
+	background-position: 5% 5%;
+}
+
+.contact .button button {
+	color: white;
+	font-size: 1.5rem;
+	font-family: 'Rambla', sans-serif;
+	height: 50px;
+	width: 100%;
+	background-color: #00A1E1;
+	padding: 0;
+	border: none;
+	border-radius: 4px;
+}
+
+/*--------------------------------------------------------------------- 
+	----------------------- CONTENT TEMPLATE ----------------------- 
+---------------------------------------------------------------------*/
+.content {text-align: left;}
+.content .row p {
+	font-size: 0.8rem;
+}
+.content .row {
+	display: inline-flex;
+}
+.content .row .col3{
+	padding: 10px;
+	width: 33.333%;
+}
+
+.content .row .col1-3 {
+	width: 33%;
+	padding: 10px;
+}
+
+.content .row .col2-3 {
+	width: 66%;
+	padding: 10px;
+}
+
+.content img {
+	border-radius: 17px;
+	padding: 10px; 
+	width: 90%;
+	margin-bottom: 10px;
+}
+
+/*--------------------------------------------------------------------- 
+	----------------------- PEOPLE PAGE ----------------------- 
+---------------------------------------------------------------------*/
+
+.people div {
+	margin: 10px 0 30px;
+	padding: 0 1.5%;
+	display: inline-block;
+	width: 28%;
+}
+.people p { font-size: 0.8rem; }
+.people img {
+	border-radius: 4px;
+	width: 100%;
+}
+
+/*--------------------------------------------------------------------- 
+	----------------------- Modal Style ----------------------- 
+---------------------------------------------------------------------*/
+#login-main {
+	background-color: rgba(115, 115, 115, 0.4);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	left: 0;
+	top: 0;
+}
+
+#login-modal {
+	position: relative;
+	background-color: white;
+	top: 50%;
+	left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform:    translate(-50%, -50%);
+    -ms-transform:     translate(-50%, -50%);
+    -o-transform:      translate(-50%, -50%);
+    transform:         translate(-50%, -50%); 
+	width: 50%;
+	height: auto;
+	display: inline-block;
+	z-index: 1;
+}
+
+.close-button {
+	color: #00A1E1;
+	width: 20px;
+	height: 20px;
+	font-size: 1rem;
+	float: right;
+	margin: 30px 10% 0 0;
+	background: none;
+	border: none;
+	padding: 0;
+}
+
+#login-modal input {
+	text-indent: 10px;
+	clear: both;
+	font-size: 1rem;
+	font-family: 'Rambla', sans-serif;
+	display: block;
+	margin: 20px auto;
+	width: 80%;
+	height: 50px;
+	border-radius: 3px;
+	background-color: #F0F0F0;
+	border: none;
+}
+
+#login-modal p {
+	font-family: 'Rambla', sans-serif;
+	margin: 5px 0 5px 10%;
+	display: inline-block;
+}
+#login-modal h2 {
+	display: inline-block;
+	margin: 25px 0 20px 10%;
+	color: #00A1E1;
+}
+#sign-in {
+	font-family: 'Rambla', sans-serif;
+	float: right;
+	width: 90px;
+	height: 40px;
+	color: white;
+	font-size: 1.2rem;
+	background: #00A1E1;
+	border: none;
+	border-radius: 4px;
+	margin: 5px 10% 25px 0;
+}
+
+/*--------------------------------------------------------------------- 
+	----------------------- BREAK POINTS ----------------------- 
+---------------------------------------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+	body {	width: 95%;	}
+	#graphs { 
+		height: auto;
+		background-image: none;
+  		background-color: rgba(162, 169, 176, 0.52);
+	}
+	
+	
+	#graphs .col:nth-child(2) .graph-txt {
+		bottom: -40px;
+	}
+	#graphs .col span {
+		font-size: 1.3rem;
+		font-size: 2.4vw;
+	}
+	
+	#graphs .col {
+		width: 100%;
+		height: 400px;
+	}
+	
+	#graphs .col img {
+		position: relative;
+		display: block;
+		width: 60%;
+		margin: 0 auto;
+	}
+	
+	.blockInfo div {	font-size: 1.5vw;	}
+	.blockInfo b {  font-size: 2.6vw; }
+	.blockInfo .smallBlock b {   font-size: 4vw; }
+	
+	/*Contact*/
+	.contact {	width: 100%; }
+	.contact:nth-of-type(1) { height: 200px; margin: 20px 0 0;/* display: none; */}
+	
+	/*Page template*/
+	.content .row .col3, .content .row .col1-3, .content .row .col2-3 { width: 100%; }
+	.content .row { display: block; }
+	
+	/* People */
+	.people div {
+		width: 70%;
+	}
+	
+	.people img {
+		height: 50%;
+		width: auto;
+	}
+	
+	/* Modal */
+	#login-modal {
+		width: 90%;
+	}
+}
